@@ -1,0 +1,10 @@
+﻿// i can make more than requests in this file
+@multiTenancy_HostAddress = http://localhost:5261
+
+GET {{multiTenancy_HostAddress}}/api/product
+tenant: LinkedIn
+###
+
+GET {{multiTenancy_HostAddress}}/api/product/1
+tenant: LinkedIn
+

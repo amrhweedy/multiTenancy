@@ -1,0 +1,16 @@
+﻿@multiTenancy_HostAddress = http://localhost:5261
+
+
+###
+
+POST {{multiTenancy_HostAddress}}/api/product
+tenant: Twitter
+Content-Type: application/json
+
+{
+  "name" : "product 2 - Twitter",
+  "description" : "this is second product twitter ",
+  "rate" : 1500
+}
+
+###
